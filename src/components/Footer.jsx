@@ -71,7 +71,7 @@ const Footer = () => {
               transition={{ duration: 0.5 }}
             >
               <img
-                src="/src/assets/LOGO2.jpg"
+                src="/LOGO2.jpg"
                 alt="FEIDEU SERVICES"
                 className="h-16 w-auto mb-4"
               />
