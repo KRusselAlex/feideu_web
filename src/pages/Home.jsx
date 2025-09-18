@@ -8,6 +8,8 @@ import ProcessSection from '../components/home/ProcessSection';
 import CTASection from '../components/home/CTASection';
 import HeroSection from '../components/home/HeroSection';
 import QuoteRequestSection from '../components/home/QuoteRequestSection';
+import Team from './Team';
+import TeamSection from '../components/home/TeamSection';
 
 const Home = () => {
   return (
@@ -32,6 +34,8 @@ const Home = () => {
 
       {/* CTA Section */}
       <CTASection />
+      
+      <TeamSection />
 
       <QuoteRequestSection />
 
