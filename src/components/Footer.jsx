@@ -59,7 +59,8 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-white text-secondary-900">
+    <>
+     <footer className="bg-white text-secondary-900">
       <div className="max-w-6xl mx-auto px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo et Description */}
@@ -206,8 +207,28 @@ const Footer = () => {
             <p>&copy; {currentYear} FEIDEU SERVICES. Tous droits réservés.</p>
           </motion.div>
         </div>
+        
       </div>
+
     </footer>
+     {/* Footer */}
+      <foot className="bg-gray-900 text-white py-12">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="flex items-center space-x-2 mb-4 md:mb-0">
+              <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-lg">F</span>
+              </div>
+              <span className="text-xl font-bold">FEIDEU SERVICES</span>
+            </div>
+            <div className="text-gray-400">
+              © 2024 FEIDEU SERVICES. Tous droits réservés.
+            </div>
+          </div>
+        </div>
+      </foot>
+    </>
+   
   );
 };
 
