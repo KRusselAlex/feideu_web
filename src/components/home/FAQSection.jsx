@@ -3,8 +3,8 @@ import faqData from "../../data/faq";
 
 const FAQSection = () => (
   <section id="faq" className="py-24">
-    <div className="max-w-4xl mx-auto px-2 md:px-6 lg:px-8">
-      <h2 className="text-4xl font-bold text-center mb-12">FAQ</h2>
+    <div className="max-w-4xl mx-auto px-3 md:px-6 lg:px-8">
+      <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">FAQ</h2>
       <div className="space-y-6">
         {faqData.map((item, index) => (
           <details key={index} className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">

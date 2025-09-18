@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const CTASection = () => (
  <section className="py-24 bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 relative overflow-hidden">
         <div className="absolute inset-0 bg-black/10"></div>
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
+        <div className="max-w-7xl mx-auto px-2 md:px-6 lg:px-8 relative">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -12,7 +12,7 @@ const CTASection = () => (
             transition={{ duration: 0.8 }}
             className="text-center space-y-8"
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+            <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
               Prêt à transformer votre établissement ?
             </h2>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
@@ -37,11 +37,11 @@ const CTASection = () => (
               </motion.button>
             </div>
 
-            <div className="flex justify-center items-center space-x-8 pt-8">
+            <div className="flex flex-col md:flex-row justify-center  items-center gap-8 pt-8">
               <div className="text-center">
                 <div className="text-2xl mb-2">📞</div>
                 <div className="text-white font-medium">Appelez-nous</div>
-                <div className="text-blue-200 text-sm">+229 XX XX XX XX</div>
+                <div className="text-blue-200 text-sm">+237 XX XX XX XX</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl mb-2">✉️</div>
@@ -51,7 +51,7 @@ const CTASection = () => (
               <div className="text-center">
                 <div className="text-2xl mb-2">📍</div>
                 <div className="text-white font-medium">Localisation</div>
-                <div className="text-blue-200 text-sm">Cotonou, Bénin</div>
+                <div className="text-blue-200 text-sm">Yaounde, Cameroun</div>
               </div>
             </div>
           </motion.div>

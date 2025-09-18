@@ -48,7 +48,7 @@ const Navbar = () => {
     >
       {/* Top Bar - Contact Info */}
       <div className="bg-gradient-to-r from-primary-900 to-primary-800 text-white py-2">
-       <div className="max-w-7xl mx-auto px-2 md:px-6 lg:px-8">
+       <div className="max-w-7xl mx-auto px-3 md:px-6 lg:px-8">
           <div className="flex justify-between items-center text-sm">
             <div className="hidden lg:flex items-center space-x-6">
               <div className="flex items-center space-x-2">
@@ -82,7 +82,7 @@ const Navbar = () => {
             : 'bg-white/90 backdrop-blur-sm'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-3 md:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <motion.div

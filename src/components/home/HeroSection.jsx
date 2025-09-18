@@ -3,32 +3,32 @@ import { motion } from 'framer-motion';
 import stats from '../../data/stats';
 
 const HeroSection = () => (
-  <section id="accueil" className="pt-48 pb-20 relative overflow-hidden">
+  <section id="accueil" className="pt-32 md:pt-48 pb-20 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-indigo-600/10"></div>
-          <div className="max-w-7xl mx-auto px-2 md:px-6 lg:px-8 relative">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="max-w-7xl mx-auto px-3 md:px-6 lg:px-8 relative">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center " >
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 className="space-y-8"
               >
-                <div className="space-y-6">
+                <div className="text-center md:text-start space-y-6 ">
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2 }}
-                    className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium"
+                    className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full  text-sm font-medium"
                   >
                     🚀 Solutions Technologiques Innovantes
                   </motion.div>
-                  <h1 className="text-5xl lg:text-7xl font-extrabold text-gray-900 leading-tight">
+                  <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-gray-900 leading-tight">
                     Transformez votre{" "}
                     <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
                       établissement
                     </span>
                   </h1>
-                  <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
+                  <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-lg">
                     FEIDEU SERVICES vous accompagne dans la modernisation de votre établissement 
                     avec des solutions technologiques sur mesure, fiables et performantes.
                   </p>

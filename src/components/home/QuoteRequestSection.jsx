@@ -2,8 +2,8 @@ import React from "react";
 
 const QuoteRequestSection = () => (
   <section id="devis" className="py-24 bg-blue-50">
-    <div className="max-w-4xl mx-auto px-2 md:px-6 lg:px-8 text-center">
-      <h2 className="text-4xl font-bold mb-6">Demandez un Devis Gratuit</h2>
+    <div className="max-w-4xl mx-auto px-3 md:px-6 lg:px-8 text-center">
+      <h2 className="text-3xl md:text-5xl font-bold mb-6">Demandez un Devis Gratuit</h2>
       <p className="text-gray-600 mb-8">
         Contactez-nous pour obtenir un devis personnalisé adapté à vos besoins et vos projets.
       </p>

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const TestimonialsSection = () => (
      <section className="py-24">
-        <div className="max-w-7xl mx-auto px-2 md:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-3 md:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
