@@ -5,7 +5,7 @@ import stats from '../../data/stats';
 const HeroSection = () => (
   <section id="accueil" className="pt-48 pb-20 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-indigo-600/10"></div>
-          <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
+          <div className="max-w-7xl mx-auto px-2 md:px-6 lg:px-8 relative">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
@@ -80,10 +80,10 @@ const HeroSection = () => (
                     alt="Solutions technologiques pour l'éducation"
                     className="w-full h-auto rounded-3xl shadow-2xl"
                   />
-                  <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-2xl flex items-center justify-center shadow-xl">
+                  <div className="absolute -top-6  -right-1 md:-right-4 lg:-right-6 w-24 h-24 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-2xl flex items-center justify-center shadow-xl">
                     <span className="text-3xl">💻</span>
                   </div>
-                  <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center shadow-xl">
+                  <div className="absolute -bottom-6 -left-1 md:-left-4 lg:-left-6 w-24 h-24 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center shadow-xl">
                     <span className="text-3xl">🎓</span>
                   </div>
                 </div>

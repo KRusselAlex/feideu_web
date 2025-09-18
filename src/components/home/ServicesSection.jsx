@@ -5,7 +5,7 @@ import services from "../../data/services";
 
 const ServicesSection = () => (
     <section id="services" className="py-24 bg-white/50 backdrop-blur">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto px-2 md:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
