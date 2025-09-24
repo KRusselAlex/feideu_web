@@ -10,8 +10,7 @@ const QuoteRequestSection = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit = async () => {
     setIsSubmitting(true);
     // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 2000));
@@ -47,7 +46,7 @@ const QuoteRequestSection = () => {
               Devis Gratuit
             </div>
 
-            <h2 className="text-5xl md:text-6xl font-heading font-bold mb-8 leading-tight">
+            <h2 className="text-5xl md:text-6xl font-heading font-bold mb-8 leading-tight text-white">
               Transformons Votre
               <span className="block bg-gradient-to-r from-accent-400 to-accent-300 bg-clip-text text-transparent">
                 Vision en Réalité
@@ -96,10 +95,7 @@ const QuoteRequestSection = () => {
             className="animate-fade-in-up"
             style={{ animationDelay: "0.2s" }}
           >
-            <form
-              onSubmit={handleSubmit}
-              className="bg-white/10 backdrop-blur-xl p-10 rounded-4xl border border-white/20 shadow-large"
-            >
+            <div className="bg-white/10 backdrop-blur-xl p-10 rounded-4xl border border-white/20 shadow-large">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
                 <div className="relative">
                   <input
@@ -108,7 +104,6 @@ const QuoteRequestSection = () => {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="Votre nom"
-                    required
                     className="w-full bg-white/10 border border-white/20 text-white placeholder-white/60 p-4 rounded-2xl backdrop-blur-sm focus:bg-white/20 focus:border-accent-400 focus:outline-none transition-all duration-300"
                   />
                 </div>
@@ -119,7 +114,6 @@ const QuoteRequestSection = () => {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="Votre email"
-                    required
                     className="w-full bg-white/10 border border-white/20 text-white placeholder-white/60 p-4 rounded-2xl backdrop-blur-sm focus:bg-white/20 focus:border-accent-400 focus:outline-none transition-all duration-300"
                   />
                 </div>
@@ -132,7 +126,6 @@ const QuoteRequestSection = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   placeholder="Objet de votre projet"
-                  required
                   className="w-full bg-white/10 border border-white/20 text-white placeholder-white/60 p-4 rounded-2xl backdrop-blur-sm focus:bg-white/20 focus:border-accent-400 focus:outline-none transition-all duration-300"
                 />
               </div>
@@ -144,13 +137,12 @@ const QuoteRequestSection = () => {
                   onChange={handleChange}
                   placeholder="Décrivez-nous votre projet en détail..."
                   rows="5"
-                  required
                   className="w-full bg-white/10 border border-white/20 text-white placeholder-white/60 p-4 rounded-2xl backdrop-blur-sm focus:bg-white/20 focus:border-accent-400 focus:outline-none transition-all duration-300 resize-none"
                 ></textarea>
               </div>
 
               <button
-                type="submit"
+                onClick={handleSubmit}
                 disabled={isSubmitting}
                 className="w-full bg-gradient-to-r from-accent-500 to-accent-400 hover:from-accent-400 hover:to-accent-300 text-black font-bold py-5 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-glow-blue disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none group"
               >
@@ -172,7 +164,7 @@ const QuoteRequestSection = () => {
               <p className="text-center text-white/60 text-sm mt-4">
                 Réponse garantie sous 24h • Sans engagement
               </p>
-            </form>
+            </div>
           </div>
         </div>
       </div>
