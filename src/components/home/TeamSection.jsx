@@ -75,10 +75,10 @@ const TeamSection = () => (
               </div>
 
               {/* Connect button */}
-              <button className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 font-medium text-sm opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
+              {/* <button className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 font-medium text-sm opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
                 <span>Se connecter</span>
                 <ArrowRight className="w-4 h-4" />
-              </button>
+              </button> */}
             </div>
 
             {/* Decorative corner */}
