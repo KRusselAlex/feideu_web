@@ -1,15 +1,13 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import ServicesSection from '../components/home/ServicesSection';
-import AboutSection from '../components/home/AboutSection';
-import PortfolioSection from '../components/home/PortfolioSection';
-import TestimonialsSection from '../components/home/TestimonialsSection';
-import ProcessSection from '../components/home/ProcessSection';
-import CTASection from '../components/home/CTASection';
-import HeroSection from '../components/home/HeroSection';
-import QuoteRequestSection from '../components/home/QuoteRequestSection';
-import Team from './Team';
-import TeamSection from '../components/home/TeamSection';
+import React from "react";
+import ServicesSection from "../components/home/ServicesSection";
+import AboutSection from "../components/home/AboutSection";
+import PortfolioSection from "../components/home/PortfolioSection";
+import TestimonialsSection from "../components/home/TestimonialsSection";
+import ProcessSection from "../components/home/ProcessSection";
+import CTASection from "../components/home/CTASection";
+import HeroSection from "../components/home/HeroSection";
+import QuoteRequestSection from "../components/home/QuoteRequestSection";
+import TeamSection from "../components/home/TeamSection";
 
 const Home = () => {
   return (
@@ -18,28 +16,26 @@ const Home = () => {
       <HeroSection />
 
       {/* Services Section */}
-     <ServicesSection />
+      <ServicesSection />
 
-      {/* About Section */}
-      <AboutSection />
-      
       {/* portfolio section */}
       <PortfolioSection />
 
-      {/* Testimonials Section */}
-      <TestimonialsSection />
+      {/* About Section */}
+      <AboutSection />
 
       {/* Process Section */}
       <ProcessSection />
 
-      {/* CTA Section */}
-      <CTASection />
-      
-      <TeamSection />
-
       <QuoteRequestSection />
 
-      
+      <TeamSection />
+
+      {/* CTA Section */}
+      <CTASection />
+
+      {/* Testimonials Section */}
+      <TestimonialsSection />
     </div>
   );
 };

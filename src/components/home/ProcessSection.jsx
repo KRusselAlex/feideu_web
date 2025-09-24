@@ -3,7 +3,7 @@ import process from "../../data/process";
 import { motion } from 'framer-motion';
 
 const ProcessSection = () => (
-  <section className="py-24 bg-gradient-to-r from-blue-50 to-indigo-50">
+  <section className="py-24 bg-white ">
         <div className="max-w-7xl mx-auto px-3 md:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
